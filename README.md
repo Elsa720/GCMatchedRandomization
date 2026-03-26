@@ -2,7 +2,7 @@
 
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Elsa720/UcscGenomeRegexScanner/blob/main/LICENSE)
 
-A custom randomization function for generating genomic controls that match target regions by **length** and **GC content**. This powerful R function is used as the randomization function part of the RegioneR packages for the Permutation test.
+A custom randomization function for generating genomic controls that match target regions by **length** and **GC content**. This powerful R function is used as the randomization function part of the [`RegioneR`](https://www.bioconductor.org/packages/release/bioc/vignettes/regioneR/inst/doc/regioneR.html) packages for the Permutation test.
 
 ## Features
 
@@ -43,8 +43,8 @@ If the function's code is output, it means you have successfully deployed the fu
 
 **Notes:**
 You can also load the function online via: 
-1. using devtools or remotes via source_url；
-2. using the terminal to clone the function using `git clone` and then loading it via the source script.
+1. using `devtools` or `remotes` via `source_url()`；
+2. using the terminal to clone the function using `git clone` and then loading it via `source()`.
 
 ## Usage Example
 
