@@ -21,7 +21,7 @@
 #' @export
 #' @import GenomicRanges
 #' @import Biostrings
-#' @import IRanges
+
 
 library(GenomicRanges)
 library(Biostrings)
