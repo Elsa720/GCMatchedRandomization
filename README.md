@@ -14,9 +14,37 @@ A custom randomization function for generating genomic controls that match targe
 ## Installation
 
 ```r
-# Download the script from this repo, and make sure you have installed the `GenomicRanges` and `Biostrings` packages.
+# download the gc_matched_randomize.R on the current working dir and then load the function locally
+download.file("https://raw.githubusercontent.com/Elsa720/GCMatchedRandomization/main/gc_matched_randomize.R", 
+              destfile = "gc_matched_randomize.R")
 source("gc_matched_randomize.R")
+
+#or load the function online
+
+source("https://github.com/Elsa720/GCMatchedRandomization/raw/refs/heads/main/gc_matched_randomize.R")
+
 ```
+Since this function depends on `GenomicRanges` and `Biostrings`, please ensure that you have these Bioconductor packages installed:
+
+```r
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install(c("GenomicRanges", "Biostrings"))
+```
+
+After loading, you can run the following command to check if the function exists:
+
+```r
+print(gc_matched_randomize)
+```
+
+If the function's code is output, it means you have successfully deployed the function in your R environment!
+
+**Notes:**
+You can also load the function online via: 
+1. using devtools or remotes via source_url；
+2. using the terminal to clone the function using `git clone` and then loading it via the source script.
 
 ## Usage Example
 
